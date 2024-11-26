@@ -1,8 +1,10 @@
+import spinner from '../assets/vector.svg'
+
 export const Header = () => {
   return (
     <header className="header">
         <picture>
-          <img className="spinner" src="src\assets\vector.svg" alt="spinner" />
+          <img className="spinner" src={ spinner } alt="spinner" />
         </picture>
         
         <h1 className="title">Our Collection</h1>  

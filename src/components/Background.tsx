@@ -1,10 +1,10 @@
-
+import background from '../assets/bg-cafe.jpg'
 
 export const Background = () => {
   return (
     <header>
       <figure>
-        <img src="src\assets\bg-cafe.jpg" alt="coffee background" />
+        <img src={ background } alt="coffee background" />
       </figure>
     </header>
   )
