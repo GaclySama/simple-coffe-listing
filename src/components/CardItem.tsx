@@ -6,19 +6,20 @@ import start from '../assets/Star.svg';
 
 
 interface Props { 
-  coffee: CoffeAPIResponse
+  coffee: CoffeAPIResponse;
+  allCoffees: boolean;
 }
 
-export const CardItem = ({ coffee }: Props ) => {
+export const CardItem = ({ coffee, allCoffees }: Props ) => {
 
-  const { available, image,name, popular, price, rating, votes } = coffee;
+  const { available, image, name, popular, price, rating, votes } = coffee;
 
   let startToUse: string;
   coffee.rating ? startToUse = start_fill : startToUse = start;
 
   return (
     <div 
-      className={ `${styles.card} animate__animated animate__fadeIn` }
+      className={ `${styles.card} animate__animated animate__fadeIn ${ (!allCoffees && !available ) ? styles.notDisplay : '' } ` }
     >
 
       <p className={ popular ? styles.popular : styles.notDisplay }><b>Popular</b></p>

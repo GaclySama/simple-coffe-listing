@@ -12,9 +12,6 @@ export const MainCard = ({ isLoading, coffees }: Props ) => {
 
   const [allCoffees, setAllCoffees] = useState(true);
 
-  const avalibleCoffees = coffees.filter( coffee => coffee.available );
-  const coffeesToShow = allCoffees ? coffees : avalibleCoffees;
-
   const handleCoffes = () => {
     setAllCoffees( !allCoffees );
   };
@@ -37,8 +34,8 @@ export const MainCard = ({ isLoading, coffees }: Props ) => {
                 }}>Loading...</h1>
               )
             : (
-                coffeesToShow.map( coffee => (
-                  <CardItem key={ coffee.id } coffee={ coffee } />
+                coffees.map( coffee => (
+                  <CardItem key={ coffee.id } coffee={ coffee } allCoffees={ allCoffees } />
                 ))
             )
         }
