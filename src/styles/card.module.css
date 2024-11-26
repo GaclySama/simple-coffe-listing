@@ -1,0 +1,118 @@
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+.imgContainer {
+  width: 100%;
+  aspect-ratio: 4 / 2.5; 
+  background-color: #1B1D1F;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px; 
+}
+
+.startImg {
+  width: auto;
+  height: fit-content;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #FEF7EE;
+  margin: 0;
+  text-align: left;
+}
+
+.price {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #111315;
+  background-color: #BEE3CC;
+  margin: auto;
+  margin-right: 0;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+.popular {
+  position: absolute;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 600;
+  background-color: #F6C768;
+  padding: 3px 5px;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.notDisplay {
+  display: none;
+}
+
+.rating {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #FEF7EE;
+  margin: 0;
+  text-align: left;
+}
+
+.votes {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #6F757C;
+  margin-right: auto;
+}
+
+.soldOut {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #ED735D;
+  margin: auto;
+  margin-right: 0;
+}
+
+.btnActive {
+  background: #6F757C;
+}
+
+.btnActive:hover {
+  opacity: 1;
+  cursor: default;
+}
